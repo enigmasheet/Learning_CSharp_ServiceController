@@ -10,6 +10,7 @@ try
     using var sc = new ServiceController(serviceName);
 
     // 1. Display current details
+    Console.WriteLine("-------------------------");
     Console.WriteLine($"--- {sc.DisplayName} ---");
     Console.WriteLine($"Status:  {sc.Status}");
     Console.WriteLine($"CanStop: {sc.CanStop}");
